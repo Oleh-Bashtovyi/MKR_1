@@ -1,15 +1,6 @@
 from main import filter_lines
+from tests.conftest import lists_equal
 import pytest
-
-
-def lists_equal(list1: list[str], list2: list[str]):
-    if len(list1) != len(list2):
-        return False
-
-    for str1, str2 in zip(list1, list2):
-        if str1 != str2:
-            return False
-    return True
 
 
 @pytest.mark.parametrize("input_list, keyword, case_sensetive, expected_list",
