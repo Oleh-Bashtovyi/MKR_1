@@ -44,3 +44,4 @@ if __name__ == '__main__':
     filtered_lines = filter_lines(lines, "rEq", False)
     print(filtered_lines)
     write_lines_to_file("filtered.txt", filtered_lines)
+    print("Completed!")
