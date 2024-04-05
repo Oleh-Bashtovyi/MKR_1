@@ -14,6 +14,12 @@ import pytest
                                "This is not contain honeRt"], "honeS", False,
                               ["this is To be honestly", "an interestingly honeStler",
                                "You arHonest pers", "my badhoneSt reaction"]),
+                             (["this is test", "that dont contain",
+                               "required", "words in text"], "LIKE A BOSS", False,
+                              []),
+                             (["this is test", "that dont contain",
+                               "required", "words in text"], "LIKE A BOSS", True,
+                              []),
                          ])
 def test_filtering(input_list, keyword, case_sensetive, expected_list):
     filtered_lines = filter_lines(input_list, keyword, case_sensetive)

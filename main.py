@@ -8,12 +8,12 @@ def read_file(filename: str) -> list[str]:
     return lines
 
 
-def filter_lines(lines: list[str], keyword:str, case_sensetive:bool = True) -> list[str]:
+def filter_lines(lines: list[str], keyword: str, case_sensetive: bool = True) -> list[str]:
     """
     Select lines that contain specified keyword.
     :param case_sensetive: is case sensetive filtering
     :param lines: lines that must be filtered
-    :param keyword: filter by keyword
+    :param keyword:  filter by keyword
     :return:  list of string that contain keyword
     """
     filtered_lines = []
