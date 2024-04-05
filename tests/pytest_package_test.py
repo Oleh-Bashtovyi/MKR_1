@@ -5,6 +5,10 @@ def test_stupid_test():
     assert 1 == 1
 
 
+def test_some_test():
+    assert 2 ==2
+
+
 def test_throws_stupid_test():
     with pytest.raises(ZeroDivisionError):
         assert 1 / 0 == 1
