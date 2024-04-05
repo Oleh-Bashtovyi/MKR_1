@@ -28,6 +28,14 @@ def filter_lines(lines: list[str], keyword:str, case_sensetive:bool = True) -> l
     return filtered_lines
 
 
+def write_lines_to_file(filename: str, lines: list[str]):
+    """
+    Write all lines to specified file
+    """
+    with open(filename, 'w') as f:
+        f.writelines(lines)
+
+
 if __name__ == '__main__':
     lines = read_file("test.txt")
     print(lines)
@@ -35,3 +43,4 @@ if __name__ == '__main__':
     print(filtered_lines)
     filtered_lines = filter_lines(lines, "rEq", False)
     print(filtered_lines)
+    write_lines_to_file("filtered.txt", filtered_lines)
