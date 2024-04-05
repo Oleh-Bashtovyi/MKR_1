@@ -1,0 +1,7 @@
+this is line with REQuired
+word in text
+so Req. must be rEq
+returned and
+written to
+reQ file
+werttt.

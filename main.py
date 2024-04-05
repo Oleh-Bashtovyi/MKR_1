@@ -1,16 +1,13 @@
-# This is a sample Python script.
+def read_file(filename: str) -> list[str]:
+    """
+  Read and return all lines in specified file.
+  :return: list of lines
+  """
+    with open(filename, 'r') as f:
+        lines = f.readlines()
+    return lines
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    lines = read_file("test.txt")
+    print(lines)
