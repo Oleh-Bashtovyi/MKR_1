@@ -246,6 +246,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+filtered.txt
 
 # Spyder project settings
 .spyderproject
